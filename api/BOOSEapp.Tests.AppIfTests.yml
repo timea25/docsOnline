@@ -1,0 +1,532 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEapp.Tests.AppIfTests
+  commentId: T:BOOSEapp.Tests.AppIfTests
+  id: AppIfTests
+  parent: BOOSEapp.Tests
+  children:
+  - BOOSEapp.Tests.AppIfTests.Compile_AppIf_DoesNotThrowException
+  - BOOSEapp.Tests.AppIfTests.Constructor_AppIf_CreatesObject
+  - BOOSEapp.Tests.AppIfTests.Execute_AppIf_AfterCompile_DoesNotThrowException
+  - BOOSEapp.Tests.AppIfTests.Execute_AppIf_WithoutCompile_DoesNotCrash
+  - BOOSEapp.Tests.AppIfTests.Multiple_AppIf_Instances_WorkIndependently
+  langs:
+  - csharp
+  - vb
+  name: AppIfTests
+  nameWithType: AppIfTests
+  fullName: BOOSEapp.Tests.AppIfTests
+  type: Class
+  source:
+    remote:
+      path: BOOSEappTests/AppIfTests.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: AppIfTests
+    path: ../BOOSEappTests/AppIfTests.cs
+    startLine: 17
+  assemblies:
+  - BOOSEappTests
+  namespace: BOOSEapp.Tests
+  summary: >-
+    This class contains unit tests for the AppIf command. It checks that the command can be created and executed safely.
+
+    Since the main logic of the If statement is handled by the Parser,
+
+    these tests focus on ensuring that the AppIf class does not crash and behaves correctly when its methods are called.
+
+    These tests help confirm that the class works correctly within the overall BOOSE system.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class AppIfTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class AppIfTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: BOOSEapp.Tests.AppIfTests.Constructor_AppIf_CreatesObject
+  commentId: M:BOOSEapp.Tests.AppIfTests.Constructor_AppIf_CreatesObject
+  id: Constructor_AppIf_CreatesObject
+  parent: BOOSEapp.Tests.AppIfTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_AppIf_CreatesObject()
+  nameWithType: AppIfTests.Constructor_AppIf_CreatesObject()
+  fullName: BOOSEapp.Tests.AppIfTests.Constructor_AppIf_CreatesObject()
+  type: Method
+  source:
+    remote:
+      path: BOOSEappTests/AppIfTests.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Constructor_AppIf_CreatesObject
+    path: ../BOOSEappTests/AppIfTests.cs
+    startLine: 21
+  assemblies:
+  - BOOSEappTests
+  namespace: BOOSEapp.Tests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Constructor_AppIf_CreatesObject()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Constructor_AppIf_CreatesObject()
+  overload: BOOSEapp.Tests.AppIfTests.Constructor_AppIf_CreatesObject*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSEapp.Tests.AppIfTests.Compile_AppIf_DoesNotThrowException
+  commentId: M:BOOSEapp.Tests.AppIfTests.Compile_AppIf_DoesNotThrowException
+  id: Compile_AppIf_DoesNotThrowException
+  parent: BOOSEapp.Tests.AppIfTests
+  langs:
+  - csharp
+  - vb
+  name: Compile_AppIf_DoesNotThrowException()
+  nameWithType: AppIfTests.Compile_AppIf_DoesNotThrowException()
+  fullName: BOOSEapp.Tests.AppIfTests.Compile_AppIf_DoesNotThrowException()
+  type: Method
+  source:
+    remote:
+      path: BOOSEappTests/AppIfTests.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Compile_AppIf_DoesNotThrowException
+    path: ../BOOSEappTests/AppIfTests.cs
+    startLine: 35
+  assemblies:
+  - BOOSEappTests
+  namespace: BOOSEapp.Tests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Compile_AppIf_DoesNotThrowException()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Compile_AppIf_DoesNotThrowException()
+  overload: BOOSEapp.Tests.AppIfTests.Compile_AppIf_DoesNotThrowException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSEapp.Tests.AppIfTests.Execute_AppIf_AfterCompile_DoesNotThrowException
+  commentId: M:BOOSEapp.Tests.AppIfTests.Execute_AppIf_AfterCompile_DoesNotThrowException
+  id: Execute_AppIf_AfterCompile_DoesNotThrowException
+  parent: BOOSEapp.Tests.AppIfTests
+  langs:
+  - csharp
+  - vb
+  name: Execute_AppIf_AfterCompile_DoesNotThrowException()
+  nameWithType: AppIfTests.Execute_AppIf_AfterCompile_DoesNotThrowException()
+  fullName: BOOSEapp.Tests.AppIfTests.Execute_AppIf_AfterCompile_DoesNotThrowException()
+  type: Method
+  source:
+    remote:
+      path: BOOSEappTests/AppIfTests.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Execute_AppIf_AfterCompile_DoesNotThrowException
+    path: ../BOOSEappTests/AppIfTests.cs
+    startLine: 52
+  assemblies:
+  - BOOSEappTests
+  namespace: BOOSEapp.Tests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Execute_AppIf_AfterCompile_DoesNotThrowException()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Execute_AppIf_AfterCompile_DoesNotThrowException()
+  overload: BOOSEapp.Tests.AppIfTests.Execute_AppIf_AfterCompile_DoesNotThrowException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSEapp.Tests.AppIfTests.Execute_AppIf_WithoutCompile_DoesNotCrash
+  commentId: M:BOOSEapp.Tests.AppIfTests.Execute_AppIf_WithoutCompile_DoesNotCrash
+  id: Execute_AppIf_WithoutCompile_DoesNotCrash
+  parent: BOOSEapp.Tests.AppIfTests
+  langs:
+  - csharp
+  - vb
+  name: Execute_AppIf_WithoutCompile_DoesNotCrash()
+  nameWithType: AppIfTests.Execute_AppIf_WithoutCompile_DoesNotCrash()
+  fullName: BOOSEapp.Tests.AppIfTests.Execute_AppIf_WithoutCompile_DoesNotCrash()
+  type: Method
+  source:
+    remote:
+      path: BOOSEappTests/AppIfTests.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Execute_AppIf_WithoutCompile_DoesNotCrash
+    path: ../BOOSEappTests/AppIfTests.cs
+    startLine: 70
+  assemblies:
+  - BOOSEappTests
+  namespace: BOOSEapp.Tests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Execute_AppIf_WithoutCompile_DoesNotCrash()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Execute_AppIf_WithoutCompile_DoesNotCrash()
+  overload: BOOSEapp.Tests.AppIfTests.Execute_AppIf_WithoutCompile_DoesNotCrash*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSEapp.Tests.AppIfTests.Multiple_AppIf_Instances_WorkIndependently
+  commentId: M:BOOSEapp.Tests.AppIfTests.Multiple_AppIf_Instances_WorkIndependently
+  id: Multiple_AppIf_Instances_WorkIndependently
+  parent: BOOSEapp.Tests.AppIfTests
+  langs:
+  - csharp
+  - vb
+  name: Multiple_AppIf_Instances_WorkIndependently()
+  nameWithType: AppIfTests.Multiple_AppIf_Instances_WorkIndependently()
+  fullName: BOOSEapp.Tests.AppIfTests.Multiple_AppIf_Instances_WorkIndependently()
+  type: Method
+  source:
+    remote:
+      path: BOOSEappTests/AppIfTests.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Multiple_AppIf_Instances_WorkIndependently
+    path: ../BOOSEappTests/AppIfTests.cs
+    startLine: 87
+  assemblies:
+  - BOOSEappTests
+  namespace: BOOSEapp.Tests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Multiple_AppIf_Instances_WorkIndependently()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Multiple_AppIf_Instances_WorkIndependently()
+  overload: BOOSEapp.Tests.AppIfTests.Multiple_AppIf_Instances_WorkIndependently*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: BOOSEapp.Tests
+  commentId: N:BOOSEapp.Tests
+  href: BOOSEapp.html
+  name: BOOSEapp.Tests
+  nameWithType: BOOSEapp.Tests
+  fullName: BOOSEapp.Tests
+  spec.csharp:
+  - uid: BOOSEapp
+    name: BOOSEapp
+    href: BOOSEapp.html
+  - name: .
+  - uid: BOOSEapp.Tests
+    name: Tests
+    href: BOOSEapp.Tests.html
+  spec.vb:
+  - uid: BOOSEapp
+    name: BOOSEapp
+    href: BOOSEapp.html
+  - name: .
+  - uid: BOOSEapp.Tests
+    name: Tests
+    href: BOOSEapp.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSEapp.Tests.AppIfTests.Constructor_AppIf_CreatesObject*
+  commentId: Overload:BOOSEapp.Tests.AppIfTests.Constructor_AppIf_CreatesObject
+  href: BOOSEapp.Tests.AppIfTests.html#BOOSEapp_Tests_AppIfTests_Constructor_AppIf_CreatesObject
+  name: Constructor_AppIf_CreatesObject
+  nameWithType: AppIfTests.Constructor_AppIf_CreatesObject
+  fullName: BOOSEapp.Tests.AppIfTests.Constructor_AppIf_CreatesObject
+- uid: BOOSEapp.Tests.AppIfTests.Compile_AppIf_DoesNotThrowException*
+  commentId: Overload:BOOSEapp.Tests.AppIfTests.Compile_AppIf_DoesNotThrowException
+  href: BOOSEapp.Tests.AppIfTests.html#BOOSEapp_Tests_AppIfTests_Compile_AppIf_DoesNotThrowException
+  name: Compile_AppIf_DoesNotThrowException
+  nameWithType: AppIfTests.Compile_AppIf_DoesNotThrowException
+  fullName: BOOSEapp.Tests.AppIfTests.Compile_AppIf_DoesNotThrowException
+- uid: BOOSEapp.Tests.AppIfTests.Execute_AppIf_AfterCompile_DoesNotThrowException*
+  commentId: Overload:BOOSEapp.Tests.AppIfTests.Execute_AppIf_AfterCompile_DoesNotThrowException
+  href: BOOSEapp.Tests.AppIfTests.html#BOOSEapp_Tests_AppIfTests_Execute_AppIf_AfterCompile_DoesNotThrowException
+  name: Execute_AppIf_AfterCompile_DoesNotThrowException
+  nameWithType: AppIfTests.Execute_AppIf_AfterCompile_DoesNotThrowException
+  fullName: BOOSEapp.Tests.AppIfTests.Execute_AppIf_AfterCompile_DoesNotThrowException
+- uid: BOOSEapp.Tests.AppIfTests.Execute_AppIf_WithoutCompile_DoesNotCrash*
+  commentId: Overload:BOOSEapp.Tests.AppIfTests.Execute_AppIf_WithoutCompile_DoesNotCrash
+  href: BOOSEapp.Tests.AppIfTests.html#BOOSEapp_Tests_AppIfTests_Execute_AppIf_WithoutCompile_DoesNotCrash
+  name: Execute_AppIf_WithoutCompile_DoesNotCrash
+  nameWithType: AppIfTests.Execute_AppIf_WithoutCompile_DoesNotCrash
+  fullName: BOOSEapp.Tests.AppIfTests.Execute_AppIf_WithoutCompile_DoesNotCrash
+- uid: BOOSEapp.Tests.AppIfTests.Multiple_AppIf_Instances_WorkIndependently*
+  commentId: Overload:BOOSEapp.Tests.AppIfTests.Multiple_AppIf_Instances_WorkIndependently
+  href: BOOSEapp.Tests.AppIfTests.html#BOOSEapp_Tests_AppIfTests_Multiple_AppIf_Instances_WorkIndependently
+  name: Multiple_AppIf_Instances_WorkIndependently
+  nameWithType: AppIfTests.Multiple_AppIf_Instances_WorkIndependently
+  fullName: BOOSEapp.Tests.AppIfTests.Multiple_AppIf_Instances_WorkIndependently

@@ -1,0 +1,720 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEapp.AppIf
+  commentId: T:BOOSEapp.AppIf
+  id: AppIf
+  parent: BOOSEapp
+  children:
+  - BOOSEapp.AppIf.CheckParameters(System.String[])
+  - BOOSEapp.AppIf.Compile
+  - BOOSEapp.AppIf.Execute
+  - BOOSEapp.AppIf.Set(BOOSE.StoredProgram,System.String)
+  - BOOSEapp.AppIf.SetCondition(System.Boolean)
+  - BOOSEapp.AppIf.condition
+  langs:
+  - csharp
+  - vb
+  name: AppIf
+  nameWithType: AppIf
+  fullName: BOOSEapp.AppIf
+  type: Class
+  source:
+    remote:
+      path: BOOSEapp/AppIf.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: AppIf
+    path: AppIf.cs
+    startLine: 15
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    This class represents an If command in the BOOSE system. It is used to control whether a block of code should run or not.
+
+    The condition itself is evaluated by the Parser, and this class stores the result of that condition.
+
+    If the condition is true, the code inside the if block will run. If it is false, the block will be skipped.
+
+    This class works together with the Parser to control program flow.
+  example: []
+  syntax:
+    content: 'public class AppIf : ICommand'
+    content.vb: Public Class AppIf Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - BOOSE.ICommand
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BOOSEapp.AppIf.condition
+  commentId: F:BOOSEapp.AppIf.condition
+  id: condition
+  parent: BOOSEapp.AppIf
+  langs:
+  - csharp
+  - vb
+  name: condition
+  nameWithType: AppIf.condition
+  fullName: BOOSEapp.AppIf.condition
+  type: Field
+  source:
+    remote:
+      path: BOOSEapp/AppIf.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: condition
+    path: AppIf.cs
+    startLine: 18
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  syntax:
+    content: private bool condition
+    return:
+      type: System.Boolean
+    content.vb: Private condition As Boolean
+- uid: BOOSEapp.AppIf.SetCondition(System.Boolean)
+  commentId: M:BOOSEapp.AppIf.SetCondition(System.Boolean)
+  id: SetCondition(System.Boolean)
+  parent: BOOSEapp.AppIf
+  langs:
+  - csharp
+  - vb
+  name: SetCondition(bool)
+  nameWithType: AppIf.SetCondition(bool)
+  fullName: BOOSEapp.AppIf.SetCondition(bool)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/AppIf.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: SetCondition
+    path: AppIf.cs
+    startLine: 25
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Stores the result of the condition after it has been evaluated.
+
+    This value is used to decide whether the if block should run.
+  example: []
+  syntax:
+    content: public void SetCondition(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+      description: True if condition is met, false otherwise
+    content.vb: Public Sub SetCondition(value As Boolean)
+  overload: BOOSEapp.AppIf.SetCondition*
+  nameWithType.vb: AppIf.SetCondition(Boolean)
+  fullName.vb: BOOSEapp.AppIf.SetCondition(Boolean)
+  name.vb: SetCondition(Boolean)
+- uid: BOOSEapp.AppIf.Set(BOOSE.StoredProgram,System.String)
+  commentId: M:BOOSEapp.AppIf.Set(BOOSE.StoredProgram,System.String)
+  id: Set(BOOSE.StoredProgram,System.String)
+  parent: BOOSEapp.AppIf
+  langs:
+  - csharp
+  - vb
+  name: Set(StoredProgram, string)
+  nameWithType: AppIf.Set(StoredProgram, string)
+  fullName: BOOSEapp.AppIf.Set(BOOSE.StoredProgram, string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/AppIf.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Set
+    path: AppIf.cs
+    startLine: 34
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Sets up the If command with the given program and parameters.
+
+    In this implementation, the Parser handles most of the logic, so this method is not used.
+  example: []
+  syntax:
+    content: public void Set(StoredProgram program, string parameters)
+    parameters:
+    - id: program
+      type: BOOSE.StoredProgram
+    - id: parameters
+      type: System.String
+    content.vb: Public Sub [Set](program As StoredProgram, parameters As String)
+  overload: BOOSEapp.AppIf.Set*
+  implements:
+  - BOOSE.ICommand.Set(BOOSE.StoredProgram,System.String)
+  nameWithType.vb: AppIf.Set(StoredProgram, String)
+  fullName.vb: BOOSEapp.AppIf.Set(BOOSE.StoredProgram, String)
+  name.vb: Set(StoredProgram, String)
+- uid: BOOSEapp.AppIf.Compile
+  commentId: M:BOOSEapp.AppIf.Compile
+  id: Compile
+  parent: BOOSEapp.AppIf
+  langs:
+  - csharp
+  - vb
+  name: Compile()
+  nameWithType: AppIf.Compile()
+  fullName: BOOSEapp.AppIf.Compile()
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/AppIf.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Compile
+    path: AppIf.cs
+    startLine: 43
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Compiles the If command before execution.
+
+    In this case, the Parser manages the logic, so no compilation is needed here.
+  example: []
+  syntax:
+    content: public void Compile()
+    content.vb: Public Sub Compile()
+  overload: BOOSEapp.AppIf.Compile*
+  implements:
+  - BOOSE.ICommand.Compile
+- uid: BOOSEapp.AppIf.CheckParameters(System.String[])
+  commentId: M:BOOSEapp.AppIf.CheckParameters(System.String[])
+  id: CheckParameters(System.String[])
+  parent: BOOSEapp.AppIf
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters(string[])
+  nameWithType: AppIf.CheckParameters(string[])
+  fullName: BOOSEapp.AppIf.CheckParameters(string[])
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/AppIf.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: CheckParameters
+    path: AppIf.cs
+    startLine: 53
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Checks if the parameters for the If command are valid.
+
+    The validation is handled by the Parser, so this method is not used.
+  example: []
+  syntax:
+    content: public void CheckParameters(string[] parameters)
+    parameters:
+    - id: parameters
+      type: System.String[]
+      description: Command parameters
+    content.vb: Public Sub CheckParameters(parameters As String())
+  overload: BOOSEapp.AppIf.CheckParameters*
+  implements:
+  - BOOSE.ICommand.CheckParameters(System.String[])
+  nameWithType.vb: AppIf.CheckParameters(String())
+  fullName.vb: BOOSEapp.AppIf.CheckParameters(String())
+  name.vb: CheckParameters(String())
+- uid: BOOSEapp.AppIf.Execute
+  commentId: M:BOOSEapp.AppIf.Execute
+  id: Execute
+  parent: BOOSEapp.AppIf
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: AppIf.Execute()
+  fullName: BOOSEapp.AppIf.Execute()
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/AppIf.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Execute
+    path: AppIf.cs
+    startLine: 62
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Executes the If command.
+
+    The actual execution logic is controlled by the Parser, so this method does not perform any actions.
+  example: []
+  syntax:
+    content: public void Execute()
+    content.vb: Public Sub Execute()
+  overload: BOOSEapp.AppIf.Execute*
+  implements:
+  - BOOSE.ICommand.Execute
+references:
+- uid: BOOSEapp
+  commentId: N:BOOSEapp
+  href: BOOSEapp.html
+  name: BOOSEapp
+  nameWithType: BOOSEapp
+  fullName: BOOSEapp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSE.ICommand
+  commentId: T:BOOSE.ICommand
+  parent: BOOSE
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSE.ICommand
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BOOSEapp.AppIf.SetCondition*
+  commentId: Overload:BOOSEapp.AppIf.SetCondition
+  href: BOOSEapp.AppIf.html#BOOSEapp_AppIf_SetCondition_System_Boolean_
+  name: SetCondition
+  nameWithType: AppIf.SetCondition
+  fullName: BOOSEapp.AppIf.SetCondition
+- uid: BOOSEapp.AppIf.Set*
+  commentId: Overload:BOOSEapp.AppIf.Set
+  href: BOOSEapp.AppIf.html#BOOSEapp_AppIf_Set_BOOSE_StoredProgram_System_String_
+  name: Set
+  nameWithType: AppIf.Set
+  fullName: BOOSEapp.AppIf.Set
+- uid: BOOSE.ICommand.Set(BOOSE.StoredProgram,System.String)
+  commentId: M:BOOSE.ICommand.Set(BOOSE.StoredProgram,System.String)
+  parent: BOOSE.ICommand
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Set(StoredProgram, string)
+  nameWithType: ICommand.Set(StoredProgram, string)
+  fullName: BOOSE.ICommand.Set(BOOSE.StoredProgram, string)
+  nameWithType.vb: ICommand.Set(StoredProgram, String)
+  fullName.vb: BOOSE.ICommand.Set(BOOSE.StoredProgram, String)
+  name.vb: Set(StoredProgram, String)
+  spec.csharp:
+  - uid: BOOSE.ICommand.Set(BOOSE.StoredProgram,System.String)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: BOOSE.StoredProgram
+    name: StoredProgram
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICommand.Set(BOOSE.StoredProgram,System.String)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: BOOSE.StoredProgram
+    name: StoredProgram
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.StoredProgram
+  commentId: T:BOOSE.StoredProgram
+  parent: BOOSE
+  isExternal: true
+  name: StoredProgram
+  nameWithType: StoredProgram
+  fullName: BOOSE.StoredProgram
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSEapp.AppIf.Compile*
+  commentId: Overload:BOOSEapp.AppIf.Compile
+  href: BOOSEapp.AppIf.html#BOOSEapp_AppIf_Compile
+  name: Compile
+  nameWithType: AppIf.Compile
+  fullName: BOOSEapp.AppIf.Compile
+- uid: BOOSE.ICommand.Compile
+  commentId: M:BOOSE.ICommand.Compile
+  parent: BOOSE.ICommand
+  isExternal: true
+  name: Compile()
+  nameWithType: ICommand.Compile()
+  fullName: BOOSE.ICommand.Compile()
+  spec.csharp:
+  - uid: BOOSE.ICommand.Compile
+    name: Compile
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICommand.Compile
+    name: Compile
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSEapp.AppIf.CheckParameters*
+  commentId: Overload:BOOSEapp.AppIf.CheckParameters
+  href: BOOSEapp.AppIf.html#BOOSEapp_AppIf_CheckParameters_System_String___
+  name: CheckParameters
+  nameWithType: AppIf.CheckParameters
+  fullName: BOOSEapp.AppIf.CheckParameters
+- uid: BOOSE.ICommand.CheckParameters(System.String[])
+  commentId: M:BOOSE.ICommand.CheckParameters(System.String[])
+  parent: BOOSE.ICommand
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: CheckParameters(string[])
+  nameWithType: ICommand.CheckParameters(string[])
+  fullName: BOOSE.ICommand.CheckParameters(string[])
+  nameWithType.vb: ICommand.CheckParameters(String())
+  fullName.vb: BOOSE.ICommand.CheckParameters(String())
+  name.vb: CheckParameters(String())
+  spec.csharp:
+  - uid: BOOSE.ICommand.CheckParameters(System.String[])
+    name: CheckParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICommand.CheckParameters(System.String[])
+    name: CheckParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: BOOSEapp.AppIf.Execute*
+  commentId: Overload:BOOSEapp.AppIf.Execute
+  href: BOOSEapp.AppIf.html#BOOSEapp_AppIf_Execute
+  name: Execute
+  nameWithType: AppIf.Execute
+  fullName: BOOSEapp.AppIf.Execute
+- uid: BOOSE.ICommand.Execute
+  commentId: M:BOOSE.ICommand.Execute
+  parent: BOOSE.ICommand
+  isExternal: true
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: BOOSE.ICommand.Execute()
+  spec.csharp:
+  - uid: BOOSE.ICommand.Execute
+    name: Execute
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICommand.Execute
+    name: Execute
+    isExternal: true
+  - name: (
+  - name: )

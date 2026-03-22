@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEapp.Tests
+  commentId: N:BOOSEapp.Tests
+  id: BOOSEapp.Tests
+  children:
+  - BOOSEapp.Tests.AppArrayTests
+  - BOOSEapp.Tests.AppIfTests
+  - BOOSEapp.Tests.AppIntTests
+  - BOOSEapp.Tests.AppRealTests
+  - BOOSEapp.Tests.AppWhileTests
+  langs:
+  - csharp
+  - vb
+  name: BOOSEapp.Tests
+  nameWithType: BOOSEapp.Tests
+  fullName: BOOSEapp.Tests
+  type: Namespace
+  assemblies:
+  - BOOSEappTests
+references:
+- uid: BOOSEapp.Tests.AppArrayTests
+  commentId: T:BOOSEapp.Tests.AppArrayTests
+  href: BOOSEapp.Tests.AppArrayTests.html
+  name: AppArrayTests
+  nameWithType: AppArrayTests
+  fullName: BOOSEapp.Tests.AppArrayTests
+- uid: BOOSEapp.Tests.AppIfTests
+  commentId: T:BOOSEapp.Tests.AppIfTests
+  href: BOOSEapp.Tests.AppIfTests.html
+  name: AppIfTests
+  nameWithType: AppIfTests
+  fullName: BOOSEapp.Tests.AppIfTests
+- uid: BOOSEapp.Tests.AppIntTests
+  commentId: T:BOOSEapp.Tests.AppIntTests
+  href: BOOSEapp.Tests.AppIntTests.html
+  name: AppIntTests
+  nameWithType: AppIntTests
+  fullName: BOOSEapp.Tests.AppIntTests
+- uid: BOOSEapp.Tests.AppRealTests
+  commentId: T:BOOSEapp.Tests.AppRealTests
+  href: BOOSEapp.Tests.AppRealTests.html
+  name: AppRealTests
+  nameWithType: AppRealTests
+  fullName: BOOSEapp.Tests.AppRealTests
+- uid: BOOSEapp.Tests.AppWhileTests
+  commentId: T:BOOSEapp.Tests.AppWhileTests
+  href: BOOSEapp.Tests.AppWhileTests.html
+  name: AppWhileTests
+  nameWithType: AppWhileTests
+  fullName: BOOSEapp.Tests.AppWhileTests

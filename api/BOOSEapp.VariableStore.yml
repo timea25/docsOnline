@@ -1,0 +1,1251 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEapp.VariableStore
+  commentId: T:BOOSEapp.VariableStore
+  id: VariableStore
+  parent: BOOSEapp
+  children:
+  - BOOSEapp.VariableStore.#ctor
+  - BOOSEapp.VariableStore.Clear
+  - BOOSEapp.VariableStore.CreateArray(System.String,System.Int32,System.Boolean)
+  - BOOSEapp.VariableStore.Exists(System.String)
+  - BOOSEapp.VariableStore.GetAllAsStrings
+  - BOOSEapp.VariableStore.GetValue(System.String)
+  - BOOSEapp.VariableStore.Instance
+  - BOOSEapp.VariableStore.IsReal(System.String)
+  - BOOSEapp.VariableStore.Peek(System.String,System.Int32)
+  - BOOSEapp.VariableStore.Poke(System.String,System.Int32,System.Double)
+  - BOOSEapp.VariableStore.SetInt(System.String,System.Int32)
+  - BOOSEapp.VariableStore.SetReal(System.String,System.Double)
+  - BOOSEapp.VariableStore.arrays
+  - BOOSEapp.VariableStore.instance
+  - BOOSEapp.VariableStore.intVariables
+  - BOOSEapp.VariableStore.realVariables
+  langs:
+  - csharp
+  - vb
+  name: VariableStore
+  nameWithType: VariableStore
+  fullName: BOOSEapp.VariableStore
+  type: Class
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: VariableStore
+    path: VariableStore.cs
+    startLine: 17
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    This class stores and manages all variables used in the BOOSE program.
+
+    It supports integer variables, real decimal variables and arrays.
+
+    The class uses a Singleton pattern, meaning only one instance exists and is shared across the application.
+
+    It allows variables to be created, updated, retrieved and cleared
+
+    and also provides support for array operations such as poke and peek.
+
+    This class acts as the central storage for all program data.
+  example: []
+  syntax:
+    content: public class VariableStore
+    content.vb: Public Class VariableStore
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BOOSEapp.VariableStore.instance
+  commentId: F:BOOSEapp.VariableStore.instance
+  id: instance
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: instance
+  nameWithType: VariableStore.instance
+  fullName: BOOSEapp.VariableStore.instance
+  type: Field
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: instance
+    path: VariableStore.cs
+    startLine: 19
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  syntax:
+    content: private static VariableStore instance
+    return:
+      type: BOOSEapp.VariableStore
+    content.vb: Private Shared instance As VariableStore
+- uid: BOOSEapp.VariableStore.Instance
+  commentId: P:BOOSEapp.VariableStore.Instance
+  id: Instance
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: VariableStore.Instance
+  fullName: BOOSEapp.VariableStore.Instance
+  type: Property
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Instance
+    path: VariableStore.cs
+    startLine: 25
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Provides a single shared instance of the VariableStore.
+
+    If no instance exists a new one is created.
+  example: []
+  syntax:
+    content: public static VariableStore Instance { get; }
+    parameters: []
+    return:
+      type: BOOSEapp.VariableStore
+    content.vb: Public Shared ReadOnly Property Instance As VariableStore
+  overload: BOOSEapp.VariableStore.Instance*
+- uid: BOOSEapp.VariableStore.#ctor
+  commentId: M:BOOSEapp.VariableStore.#ctor
+  id: '#ctor'
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: VariableStore()
+  nameWithType: VariableStore.VariableStore()
+  fullName: BOOSEapp.VariableStore.VariableStore()
+  type: Constructor
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: .ctor
+    path: VariableStore.cs
+    startLine: 36
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  syntax:
+    content: private VariableStore()
+    content.vb: Private Sub New()
+  overload: BOOSEapp.VariableStore.#ctor*
+  nameWithType.vb: VariableStore.New()
+  fullName.vb: BOOSEapp.VariableStore.New()
+  name.vb: New()
+- uid: BOOSEapp.VariableStore.intVariables
+  commentId: F:BOOSEapp.VariableStore.intVariables
+  id: intVariables
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: intVariables
+  nameWithType: VariableStore.intVariables
+  fullName: BOOSEapp.VariableStore.intVariables
+  type: Field
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: intVariables
+    path: VariableStore.cs
+    startLine: 38
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  syntax:
+    content: private Dictionary<string, AppInt> intVariables
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,BOOSEapp.AppInt}
+    content.vb: Private intVariables As Dictionary(Of String, AppInt)
+- uid: BOOSEapp.VariableStore.realVariables
+  commentId: F:BOOSEapp.VariableStore.realVariables
+  id: realVariables
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: realVariables
+  nameWithType: VariableStore.realVariables
+  fullName: BOOSEapp.VariableStore.realVariables
+  type: Field
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: realVariables
+    path: VariableStore.cs
+    startLine: 40
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  syntax:
+    content: private Dictionary<string, AppReal> realVariables
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,BOOSEapp.AppReal}
+    content.vb: Private realVariables As Dictionary(Of String, AppReal)
+- uid: BOOSEapp.VariableStore.arrays
+  commentId: F:BOOSEapp.VariableStore.arrays
+  id: arrays
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: arrays
+  nameWithType: VariableStore.arrays
+  fullName: BOOSEapp.VariableStore.arrays
+  type: Field
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: arrays
+    path: VariableStore.cs
+    startLine: 42
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  syntax:
+    content: private Dictionary<string, AppArray> arrays
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,BOOSEapp.AppArray}
+    content.vb: Private arrays As Dictionary(Of String, AppArray)
+- uid: BOOSEapp.VariableStore.SetInt(System.String,System.Int32)
+  commentId: M:BOOSEapp.VariableStore.SetInt(System.String,System.Int32)
+  id: SetInt(System.String,System.Int32)
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: SetInt(string, int)
+  nameWithType: VariableStore.SetInt(string, int)
+  fullName: BOOSEapp.VariableStore.SetInt(string, int)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: SetInt
+    path: VariableStore.cs
+    startLine: 51
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Creates or updates an integer variable.
+
+    If the variable already exists its value is replaced.
+  example: []
+  syntax:
+    content: public void SetInt(string name, int value)
+    parameters:
+    - id: name
+      type: System.String
+      description: Variable name
+    - id: value
+      type: System.Int32
+      description: Value to store
+    content.vb: Public Sub SetInt(name As String, value As Integer)
+  overload: BOOSEapp.VariableStore.SetInt*
+  nameWithType.vb: VariableStore.SetInt(String, Integer)
+  fullName.vb: BOOSEapp.VariableStore.SetInt(String, Integer)
+  name.vb: SetInt(String, Integer)
+- uid: BOOSEapp.VariableStore.SetReal(System.String,System.Double)
+  commentId: M:BOOSEapp.VariableStore.SetReal(System.String,System.Double)
+  id: SetReal(System.String,System.Double)
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: SetReal(string, double)
+  nameWithType: VariableStore.SetReal(string, double)
+  fullName: BOOSEapp.VariableStore.SetReal(string, double)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: SetReal
+    path: VariableStore.cs
+    startLine: 63
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Creates or updates a real decimal variable.
+
+    If the variable already exists its value is replaced.
+  example: []
+  syntax:
+    content: public void SetReal(string name, double value)
+    parameters:
+    - id: name
+      type: System.String
+      description: Variable name
+    - id: value
+      type: System.Double
+      description: Value to store
+    content.vb: Public Sub SetReal(name As String, value As Double)
+  overload: BOOSEapp.VariableStore.SetReal*
+  nameWithType.vb: VariableStore.SetReal(String, Double)
+  fullName.vb: BOOSEapp.VariableStore.SetReal(String, Double)
+  name.vb: SetReal(String, Double)
+- uid: BOOSEapp.VariableStore.GetValue(System.String)
+  commentId: M:BOOSEapp.VariableStore.GetValue(System.String)
+  id: GetValue(System.String)
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: GetValue(string)
+  nameWithType: VariableStore.GetValue(string)
+  fullName: BOOSEapp.VariableStore.GetValue(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: GetValue
+    path: VariableStore.cs
+    startLine: 74
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Gets the value of a variable. It checks both integer and real variables.
+
+    If the variable does not exist, an error is thrown.
+  example: []
+  syntax:
+    content: public double GetValue(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Variable name
+    return:
+      type: System.Double
+      description: The value of the variable
+    content.vb: Public Function GetValue(name As String) As Double
+  overload: BOOSEapp.VariableStore.GetValue*
+  nameWithType.vb: VariableStore.GetValue(String)
+  fullName.vb: BOOSEapp.VariableStore.GetValue(String)
+  name.vb: GetValue(String)
+- uid: BOOSEapp.VariableStore.CreateArray(System.String,System.Int32,System.Boolean)
+  commentId: M:BOOSEapp.VariableStore.CreateArray(System.String,System.Int32,System.Boolean)
+  id: CreateArray(System.String,System.Int32,System.Boolean)
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: CreateArray(string, int, bool)
+  nameWithType: VariableStore.CreateArray(string, int, bool)
+  fullName: BOOSEapp.VariableStore.CreateArray(string, int, bool)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: CreateArray
+    path: VariableStore.cs
+    startLine: 93
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Creates a new array with a given name, size and type.
+
+    The array can store either integers or real values.
+  example: []
+  syntax:
+    content: public void CreateArray(string name, int size, bool isReal)
+    parameters:
+    - id: name
+      type: System.String
+      description: Array name
+    - id: size
+      type: System.Int32
+      description: Number of elements
+    - id: isReal
+      type: System.Boolean
+      description: True for real values, false for integers
+    content.vb: Public Sub CreateArray(name As String, size As Integer, isReal As Boolean)
+  overload: BOOSEapp.VariableStore.CreateArray*
+  nameWithType.vb: VariableStore.CreateArray(String, Integer, Boolean)
+  fullName.vb: BOOSEapp.VariableStore.CreateArray(String, Integer, Boolean)
+  name.vb: CreateArray(String, Integer, Boolean)
+- uid: BOOSEapp.VariableStore.Poke(System.String,System.Int32,System.Double)
+  commentId: M:BOOSEapp.VariableStore.Poke(System.String,System.Int32,System.Double)
+  id: Poke(System.String,System.Int32,System.Double)
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: Poke(string, int, double)
+  nameWithType: VariableStore.Poke(string, int, double)
+  fullName: BOOSEapp.VariableStore.Poke(string, int, double)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Poke
+    path: VariableStore.cs
+    startLine: 104
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Stores a value in an array at a specific index.
+  example: []
+  syntax:
+    content: public void Poke(string name, int index, double value)
+    parameters:
+    - id: name
+      type: System.String
+      description: Array name
+    - id: index
+      type: System.Int32
+      description: Position in the array
+    - id: value
+      type: System.Double
+      description: Value to store
+    content.vb: Public Sub Poke(name As String, index As Integer, value As Double)
+  overload: BOOSEapp.VariableStore.Poke*
+  nameWithType.vb: VariableStore.Poke(String, Integer, Double)
+  fullName.vb: BOOSEapp.VariableStore.Poke(String, Integer, Double)
+  name.vb: Poke(String, Integer, Double)
+- uid: BOOSEapp.VariableStore.Peek(System.String,System.Int32)
+  commentId: M:BOOSEapp.VariableStore.Peek(System.String,System.Int32)
+  id: Peek(System.String,System.Int32)
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: Peek(string, int)
+  nameWithType: VariableStore.Peek(string, int)
+  fullName: BOOSEapp.VariableStore.Peek(string, int)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Peek
+    path: VariableStore.cs
+    startLine: 115
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Retrieves a value from an array at a specific index.
+  example: []
+  syntax:
+    content: public double Peek(string name, int index)
+    parameters:
+    - id: name
+      type: System.String
+      description: Array name
+    - id: index
+      type: System.Int32
+      description: Position in the array
+    return:
+      type: System.Double
+      description: The value at that index
+    content.vb: Public Function Peek(name As String, index As Integer) As Double
+  overload: BOOSEapp.VariableStore.Peek*
+  nameWithType.vb: VariableStore.Peek(String, Integer)
+  fullName.vb: BOOSEapp.VariableStore.Peek(String, Integer)
+  name.vb: Peek(String, Integer)
+- uid: BOOSEapp.VariableStore.GetAllAsStrings
+  commentId: M:BOOSEapp.VariableStore.GetAllAsStrings
+  id: GetAllAsStrings
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsStrings()
+  nameWithType: VariableStore.GetAllAsStrings()
+  fullName: BOOSEapp.VariableStore.GetAllAsStrings()
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: GetAllAsStrings
+    path: VariableStore.cs
+    startLine: 125
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Returns all variables and their values as strings.
+
+    This is used when replacing variables inside commands.
+  example: []
+  syntax:
+    content: public Dictionary<string, string> GetAllAsStrings()
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Dictionary of variable names and values
+    content.vb: Public Function GetAllAsStrings() As Dictionary(Of String, String)
+  overload: BOOSEapp.VariableStore.GetAllAsStrings*
+- uid: BOOSEapp.VariableStore.Exists(System.String)
+  commentId: M:BOOSEapp.VariableStore.Exists(System.String)
+  id: Exists(System.String)
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: Exists(string)
+  nameWithType: VariableStore.Exists(string)
+  fullName: BOOSEapp.VariableStore.Exists(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Exists
+    path: VariableStore.cs
+    startLine: 144
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Checks if a variable exists in the store.
+  example: []
+  syntax:
+    content: public bool Exists(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Variable name
+    return:
+      type: System.Boolean
+      description: True if it exists, otherwise false
+    content.vb: Public Function Exists(name As String) As Boolean
+  overload: BOOSEapp.VariableStore.Exists*
+  nameWithType.vb: VariableStore.Exists(String)
+  fullName.vb: BOOSEapp.VariableStore.Exists(String)
+  name.vb: Exists(String)
+- uid: BOOSEapp.VariableStore.IsReal(System.String)
+  commentId: M:BOOSEapp.VariableStore.IsReal(System.String)
+  id: IsReal(System.String)
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: IsReal(string)
+  nameWithType: VariableStore.IsReal(string)
+  fullName: BOOSEapp.VariableStore.IsReal(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: IsReal
+    path: VariableStore.cs
+    startLine: 155
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Checks if a variable is a real (decimal) type.
+  example: []
+  syntax:
+    content: public bool IsReal(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Variable name
+    return:
+      type: System.Boolean
+      description: True if real, otherwise false
+    content.vb: Public Function IsReal(name As String) As Boolean
+  overload: BOOSEapp.VariableStore.IsReal*
+  nameWithType.vb: VariableStore.IsReal(String)
+  fullName.vb: BOOSEapp.VariableStore.IsReal(String)
+  name.vb: IsReal(String)
+- uid: BOOSEapp.VariableStore.Clear
+  commentId: M:BOOSEapp.VariableStore.Clear
+  id: Clear
+  parent: BOOSEapp.VariableStore
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: VariableStore.Clear()
+  fullName: BOOSEapp.VariableStore.Clear()
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/VariableStore.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Clear
+    path: VariableStore.cs
+    startLine: 166
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Clears all stored variables and arrays.
+
+    This resets the program state before running a new program.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: BOOSEapp.VariableStore.Clear*
+references:
+- uid: BOOSEapp
+  commentId: N:BOOSEapp
+  href: BOOSEapp.html
+  name: BOOSEapp
+  nameWithType: BOOSEapp
+  fullName: BOOSEapp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSEapp.VariableStore
+  commentId: T:BOOSEapp.VariableStore
+  parent: BOOSEapp
+  href: BOOSEapp.VariableStore.html
+  name: VariableStore
+  nameWithType: VariableStore
+  fullName: BOOSEapp.VariableStore
+- uid: BOOSEapp.VariableStore.Instance*
+  commentId: Overload:BOOSEapp.VariableStore.Instance
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_Instance
+  name: Instance
+  nameWithType: VariableStore.Instance
+  fullName: BOOSEapp.VariableStore.Instance
+- uid: BOOSEapp.VariableStore.#ctor*
+  commentId: Overload:BOOSEapp.VariableStore.#ctor
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore__ctor
+  name: VariableStore
+  nameWithType: VariableStore.VariableStore
+  fullName: BOOSEapp.VariableStore.VariableStore
+  nameWithType.vb: VariableStore.New
+  fullName.vb: BOOSEapp.VariableStore.New
+  name.vb: New
+- uid: System.Collections.Generic.Dictionary{System.String,BOOSEapp.AppInt}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,BOOSEapp.AppInt}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, AppInt>
+  nameWithType: Dictionary<string, AppInt>
+  fullName: System.Collections.Generic.Dictionary<string, BOOSEapp.AppInt>
+  nameWithType.vb: Dictionary(Of String, AppInt)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, BOOSEapp.AppInt)
+  name.vb: Dictionary(Of String, AppInt)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: BOOSEapp.AppInt
+    name: AppInt
+    href: BOOSEapp.AppInt.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: BOOSEapp.AppInt
+    name: AppInt
+    href: BOOSEapp.AppInt.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.Dictionary{System.String,BOOSEapp.AppReal}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,BOOSEapp.AppReal}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, AppReal>
+  nameWithType: Dictionary<string, AppReal>
+  fullName: System.Collections.Generic.Dictionary<string, BOOSEapp.AppReal>
+  nameWithType.vb: Dictionary(Of String, AppReal)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, BOOSEapp.AppReal)
+  name.vb: Dictionary(Of String, AppReal)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: BOOSEapp.AppReal
+    name: AppReal
+    href: BOOSEapp.AppReal.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: BOOSEapp.AppReal
+    name: AppReal
+    href: BOOSEapp.AppReal.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,BOOSEapp.AppArray}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,BOOSEapp.AppArray}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, AppArray>
+  nameWithType: Dictionary<string, AppArray>
+  fullName: System.Collections.Generic.Dictionary<string, BOOSEapp.AppArray>
+  nameWithType.vb: Dictionary(Of String, AppArray)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, BOOSEapp.AppArray)
+  name.vb: Dictionary(Of String, AppArray)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: BOOSEapp.AppArray
+    name: AppArray
+    href: BOOSEapp.AppArray.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: BOOSEapp.AppArray
+    name: AppArray
+    href: BOOSEapp.AppArray.html
+  - name: )
+- uid: BOOSEapp.VariableStore.SetInt*
+  commentId: Overload:BOOSEapp.VariableStore.SetInt
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_SetInt_System_String_System_Int32_
+  name: SetInt
+  nameWithType: VariableStore.SetInt
+  fullName: BOOSEapp.VariableStore.SetInt
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BOOSEapp.VariableStore.SetReal*
+  commentId: Overload:BOOSEapp.VariableStore.SetReal
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_SetReal_System_String_System_Double_
+  name: SetReal
+  nameWithType: VariableStore.SetReal
+  fullName: BOOSEapp.VariableStore.SetReal
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: BOOSEapp.VariableStore.GetValue*
+  commentId: Overload:BOOSEapp.VariableStore.GetValue
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_GetValue_System_String_
+  name: GetValue
+  nameWithType: VariableStore.GetValue
+  fullName: BOOSEapp.VariableStore.GetValue
+- uid: BOOSEapp.VariableStore.CreateArray*
+  commentId: Overload:BOOSEapp.VariableStore.CreateArray
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_CreateArray_System_String_System_Int32_System_Boolean_
+  name: CreateArray
+  nameWithType: VariableStore.CreateArray
+  fullName: BOOSEapp.VariableStore.CreateArray
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BOOSEapp.VariableStore.Poke*
+  commentId: Overload:BOOSEapp.VariableStore.Poke
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_Poke_System_String_System_Int32_System_Double_
+  name: Poke
+  nameWithType: VariableStore.Poke
+  fullName: BOOSEapp.VariableStore.Poke
+- uid: BOOSEapp.VariableStore.Peek*
+  commentId: Overload:BOOSEapp.VariableStore.Peek
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_Peek_System_String_System_Int32_
+  name: Peek
+  nameWithType: VariableStore.Peek
+  fullName: BOOSEapp.VariableStore.Peek
+- uid: BOOSEapp.VariableStore.GetAllAsStrings*
+  commentId: Overload:BOOSEapp.VariableStore.GetAllAsStrings
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_GetAllAsStrings
+  name: GetAllAsStrings
+  nameWithType: VariableStore.GetAllAsStrings
+  fullName: BOOSEapp.VariableStore.GetAllAsStrings
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, string>
+  nameWithType: Dictionary<string, string>
+  fullName: System.Collections.Generic.Dictionary<string, string>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSEapp.VariableStore.Exists*
+  commentId: Overload:BOOSEapp.VariableStore.Exists
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_Exists_System_String_
+  name: Exists
+  nameWithType: VariableStore.Exists
+  fullName: BOOSEapp.VariableStore.Exists
+- uid: BOOSEapp.VariableStore.IsReal*
+  commentId: Overload:BOOSEapp.VariableStore.IsReal
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_IsReal_System_String_
+  name: IsReal
+  nameWithType: VariableStore.IsReal
+  fullName: BOOSEapp.VariableStore.IsReal
+- uid: BOOSEapp.VariableStore.Clear*
+  commentId: Overload:BOOSEapp.VariableStore.Clear
+  href: BOOSEapp.VariableStore.html#BOOSEapp_VariableStore_Clear
+  name: Clear
+  nameWithType: VariableStore.Clear
+  fullName: BOOSEapp.VariableStore.Clear

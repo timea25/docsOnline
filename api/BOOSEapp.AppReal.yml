@@ -1,0 +1,437 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEapp.AppReal
+  commentId: T:BOOSEapp.AppReal
+  id: AppReal
+  parent: BOOSEapp
+  children:
+  - BOOSEapp.AppReal.#ctor(System.Double)
+  - BOOSEapp.AppReal.ToString
+  - BOOSEapp.AppReal.Value
+  langs:
+  - csharp
+  - vb
+  name: AppReal
+  nameWithType: AppReal
+  fullName: BOOSEapp.AppReal
+  type: Class
+  source:
+    remote:
+      path: BOOSEapp/AppReal.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: AppReal
+    path: AppReal.cs
+    startLine: 15
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    This class represents a real decimal variable used in the BOOSE application.
+
+    It stores a numeric value that can include decimal numbers.
+
+    The class allows the value to be set and accessed and it can also return the value as text when needed.
+
+    This is useful when working with decimal values in BOOSE programs.
+  example: []
+  syntax:
+    content: public class AppReal
+    content.vb: Public Class AppReal
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: BOOSEapp.AppReal.Value
+  commentId: P:BOOSEapp.AppReal.Value
+  id: Value
+  parent: BOOSEapp.AppReal
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: AppReal.Value
+  fullName: BOOSEapp.AppReal.Value
+  type: Property
+  source:
+    remote:
+      path: BOOSEapp/AppReal.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: Value
+    path: AppReal.cs
+    startLine: 20
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Stores the value of the real variable.
+  example: []
+  syntax:
+    content: public double Value { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Value As Double
+  overload: BOOSEapp.AppReal.Value*
+- uid: BOOSEapp.AppReal.#ctor(System.Double)
+  commentId: M:BOOSEapp.AppReal.#ctor(System.Double)
+  id: '#ctor(System.Double)'
+  parent: BOOSEapp.AppReal
+  langs:
+  - csharp
+  - vb
+  name: AppReal(double)
+  nameWithType: AppReal.AppReal(double)
+  fullName: BOOSEapp.AppReal.AppReal(double)
+  type: Constructor
+  source:
+    remote:
+      path: BOOSEapp/AppReal.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: .ctor
+    path: AppReal.cs
+    startLine: 27
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: >-
+    Creates a new real decimal variable.
+
+    The value can be set when the object is created, or it defaults to 0.0 if no value is provided.
+  example: []
+  syntax:
+    content: public AppReal(double value = 0)
+    parameters:
+    - id: value
+      type: System.Double
+      description: Initial value of the variable
+    content.vb: Public Sub New(value As Double = 0)
+  overload: BOOSEapp.AppReal.#ctor*
+  nameWithType.vb: AppReal.New(Double)
+  fullName.vb: BOOSEapp.AppReal.New(Double)
+  name.vb: New(Double)
+- uid: BOOSEapp.AppReal.ToString
+  commentId: M:BOOSEapp.AppReal.ToString
+  id: ToString
+  parent: BOOSEapp.AppReal
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AppReal.ToString()
+  fullName: BOOSEapp.AppReal.ToString()
+  type: Method
+  source:
+    remote:
+      path: BOOSEapp/AppReal.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-timea25.git
+    id: ToString
+    path: AppReal.cs
+    startLine: 37
+  assemblies:
+  - BOOSEapp
+  namespace: BOOSEapp
+  summary: Converts the value to a string. This is useful when displaying the value as text.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The value as a string
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: BOOSEapp.AppReal.ToString*
+references:
+- uid: BOOSEapp
+  commentId: N:BOOSEapp
+  href: BOOSEapp.html
+  name: BOOSEapp
+  nameWithType: BOOSEapp
+  fullName: BOOSEapp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSEapp.AppReal.Value*
+  commentId: Overload:BOOSEapp.AppReal.Value
+  href: BOOSEapp.AppReal.html#BOOSEapp_AppReal_Value
+  name: Value
+  nameWithType: AppReal.Value
+  fullName: BOOSEapp.AppReal.Value
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: BOOSEapp.AppReal.#ctor*
+  commentId: Overload:BOOSEapp.AppReal.#ctor
+  href: BOOSEapp.AppReal.html#BOOSEapp_AppReal__ctor_System_Double_
+  name: AppReal
+  nameWithType: AppReal.AppReal
+  fullName: BOOSEapp.AppReal.AppReal
+  nameWithType.vb: AppReal.New
+  fullName.vb: BOOSEapp.AppReal.New
+  name.vb: New
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: BOOSEapp.AppReal.ToString*
+  commentId: Overload:BOOSEapp.AppReal.ToString
+  href: BOOSEapp.AppReal.html#BOOSEapp_AppReal_ToString
+  name: ToString
+  nameWithType: AppReal.ToString
+  fullName: BOOSEapp.AppReal.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

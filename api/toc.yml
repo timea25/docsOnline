@@ -1,0 +1,74 @@
+### YamlMime:TableOfContent
+items:
+- uid: BOOSEapp
+  name: BOOSEapp
+  type: Namespace
+  items:
+  - uid: BOOSEapp.AppArray
+    name: AppArray
+    type: Class
+  - uid: BOOSEapp.AppCanvas
+    name: AppCanvas
+    type: Class
+  - uid: BOOSEapp.AppCircle
+    name: AppCircle
+    type: Class
+  - uid: BOOSEapp.AppCommandFactory
+    name: AppCommandFactory
+    type: Class
+  - uid: BOOSEapp.AppIf
+    name: AppIf
+    type: Class
+  - uid: BOOSEapp.AppInt
+    name: AppInt
+    type: Class
+  - uid: BOOSEapp.AppMoveTo
+    name: AppMoveTo
+    type: Class
+  - uid: BOOSEapp.AppReal
+    name: AppReal
+    type: Class
+  - uid: BOOSEapp.AppRectangle
+    name: AppRectangle
+    type: Class
+  - uid: BOOSEapp.AppWhile
+    name: AppWhile
+    type: Class
+  - uid: BOOSEapp.AppWrite
+    name: AppWrite
+    type: Class
+  - uid: BOOSEapp.ApplicationConfiguration
+    name: ApplicationConfiguration
+    type: Class
+  - uid: BOOSEapp.Form1
+    name: Form1
+    type: Class
+  - uid: BOOSEapp.Parser
+    name: Parser
+    type: Class
+  - uid: BOOSEapp.Program
+    name: Program
+    type: Class
+  - uid: BOOSEapp.VariableStore
+    name: VariableStore
+    type: Class
+- uid: BOOSEapp.Tests
+  name: BOOSEapp.Tests
+  type: Namespace
+  items:
+  - uid: BOOSEapp.Tests.AppArrayTests
+    name: AppArrayTests
+    type: Class
+  - uid: BOOSEapp.Tests.AppIfTests
+    name: AppIfTests
+    type: Class
+  - uid: BOOSEapp.Tests.AppIntTests
+    name: AppIntTests
+    type: Class
+  - uid: BOOSEapp.Tests.AppRealTests
+    name: AppRealTests
+    type: Class
+  - uid: BOOSEapp.Tests.AppWhileTests
+    name: AppWhileTests
+    type: Class
+memberLayout: SamePage
